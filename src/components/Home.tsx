@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { formatTimestamp } from '../utils/dateUtils';
+import { formatTimestamp } from '../utils/dateFormat';
 import './Home.css';
 
 interface Post {
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
       <div className="post-list">
         {posts.length === 0 ? (
           <div className="placeholder-post">
-            <p>Здесь пока нет постов. Создайте свой первый пост!</p>
+            <p>Здесь пока нет сообщений. Создайте свое, а остальные подтянутся!</p>
           </div>
         ) : (
           posts.map(post => (

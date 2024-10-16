@@ -21,7 +21,7 @@ const EditPost: React.FC<EditPostProps> = ({ initialContent, onCancel, onSave })
       <textarea
         value={editedContent}
         onChange={(e) => setEditedContent(e.target.value)}
-        placeholder="Введите текст поста..."
+        placeholder="Введите сообщение..."
       />
       <div>
         <button className='save-button' onClick={handleSave}>Сохранить</button>

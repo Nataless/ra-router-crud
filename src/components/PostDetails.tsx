@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { formatTimestamp } from '../utils/dateUtils';
+import { formatTimestamp } from '../utils/dateFormat';
 import EditPost from './EditPost';
 
 import './PostDetails.css';
